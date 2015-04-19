@@ -51,7 +51,7 @@ activity$date <- as.Date(activity$date)
 per day
 
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, results='asis'}
 activity2 <- na.omit(activity) 
 
 # Add steps by date
@@ -66,6 +66,7 @@ hist(daily_steps$steps,
      xlab="Total Number of Steps Taken Daily")
 mean(daily_steps$steps)
 median(daily_steps$steps)
+
 
 ```
 
